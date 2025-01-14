@@ -1,20 +1,15 @@
-print('your wish is my command')
-print('hi + 5 ** 2')
+word1 = 'imaginative'
+word2 = 'and'
+word3 = 'imagination'
+word4 = 'my name is \n erfan'
+word5 = 'it\'s the good book'
+word6 = 'semi \tcircle'
+word7 = 'I want back slash \\'
 
-word = 'imaginative and imagination'
-
-
-print(word[15])
-print(word[0:8])
-print(word[5:17])
-print(word[-1])
-print(word[-5:-2])
-print(word[4: ])
-print(word[-5: ])
-print(word[ :6])
-print(word[ :-4])
-print(word[:])
-print(word[2:12:1])
-print(word[2:12:2])
-print(word[::2])
-print(word[: :-1])
+print(word1+' '+ word2+' '+word3)
+print(word3*3)
+print(word2 + 'sss' * 5)
+print(word4)
+print(word5)
+print(word6)
+print(word7)
