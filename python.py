@@ -9,13 +9,9 @@ my_dict = {
     }
 }
 
-print(my_dict['key1'])
-print(my_dict['key3'][0])
-print(my_dict['key3'][-2: ])
-print(my_dict['key4']['a'])
-print(my_dict['key4']['c'])
-print(my_dict['key4']['b'][1])
-
-my_dict['key1'] = '55'
+my_dict['kk'] = 'vv'
 
 print(my_dict)
+print(my_dict.keys())
+print(my_dict.values())
+print(my_dict.items())
