@@ -1,18 +1,21 @@
-my_list = [5, -7 ,66, 54, -8]
-your_list = [46, 100, 5]
-c = my_list.reverse()
+my_dict = {
+    'key1': 55 , 
+    'key2': 'hello world',
+    'key3': [2, 'ss', 10, -77],
+    'key4': {
+        'a': 5,
+        'b': [10,20,30],
+        'c': 'khkhkdd'
+    }
+}
 
-my_list.reverse()
-your_list.reverse()
+print(my_dict['key1'])
+print(my_dict['key3'][0])
+print(my_dict['key3'][-2: ])
+print(my_dict['key4']['a'])
+print(my_dict['key4']['c'])
+print(my_dict['key4']['b'][1])
 
-print(c)
-print(my_list)
-print(your_list)
+my_dict['key1'] = '55'
 
-
-my_list.sort()
-your_list.sort()
-
-
-print(your_list)
-print(my_list)
+print(my_dict)
