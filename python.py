@@ -1,17 +1,14 @@
-my_dict = {
-    'key1': 55 , 
-    'key2': 'hello world',
-    'key3': [2, 'ss', 10, -77],
-    'key4': {
-        'a': 5,
-        'b': [10,20,30],
-        'c': 'khkhkdd'
-    }
-}
+my_age = 25
+your_age = 18
 
-my_dict['kk'] = 'vv'
+print(my_age > 20)
+print(your_age > 20)
 
-print(my_dict)
-print(my_dict.keys())
-print(my_dict.values())
-print(my_dict.items())
+my_tuple = (1, 'hi', 54, '7pl', [2,'kk'], -5)
+
+print(my_tuple[5])
+print(my_tuple[-3])
+print(my_tuple[2: ])
+print(my_tuple[::2])
+print(my_tuple[4][0])
+print(len(my_tuple))
