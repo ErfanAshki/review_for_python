@@ -1,17 +1,10 @@
-my_list = [0, 5, -7, 54, 16, -21]
+my_list = [0, 5, -7]
 
-print(min(my_list))
-print(max(my_list))
+# my_list.append(10)
+# my_list.append(11)
 
-my_list.sort()
+# my_list+= [10,11]
 
-print(my_list)
-
-my_list.reverse()
+my_list.extend([10,11])
 
 print(my_list)
-
-num = 22
-
-print(num, type(num))
-print(float(num))
