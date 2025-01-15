@@ -1,14 +1,17 @@
-my_age = 25
-your_age = 18
+my_set = {1,5}
 
-print(my_age > 20)
-print(your_age > 20)
+my_set.add('ss')
+my_set.add((1,'gg'))
+my_set.add(4)
+my_set.add(4)
+my_set.add(10)
+my_set.add(5)
 
-my_tuple = (1, 'hi', 54, '7pl', [2,'kk'], -5)
 
-print(my_tuple[5])
-print(my_tuple[-3])
-print(my_tuple[2: ])
-print(my_tuple[::2])
-print(my_tuple[4][0])
-print(len(my_tuple))
+print(my_set)
+print(list(my_set))
+
+my_list = [3, 'good', '55', -87, 3, 10, -87]
+
+print(set(my_list))
+print(list(set(my_list)))
