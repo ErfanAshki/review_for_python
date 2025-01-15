@@ -1,9 +1,17 @@
-user_name = input('Enter your username : ')
-age = int(input('Enter your age : '))
-email = input('Enter your email : ')
+my_list = [0, 5, -7, 54, 16, -21]
 
+print(min(my_list))
+print(max(my_list))
 
-print(f"user_name = {user_name} -- age = {age} -- email = {email}")
+my_list.sort()
 
-print(type(age))
-print(age + 10)
+print(my_list)
+
+my_list.reverse()
+
+print(my_list)
+
+num = 22
+
+print(num, type(num))
+print(float(num))
