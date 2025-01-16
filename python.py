@@ -1,12 +1,10 @@
-person = {
-    'first_name': 'ali',
-    'last_name': 'mamadi',
-    'age': 22,
-    'job': 'trader'
-}
+i = 0
 
-for (topic, data) in  person.items():
-    print(topic)
-    print(data)
-
+while i < 5: 
+    print('hi')
+    i += 1
+else:
+    print('else')
     
+print('end')
+
