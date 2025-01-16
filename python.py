@@ -1,22 +1,27 @@
-import random
+# numbers = [1,5,4,54,25,10,22,11]
 
+# for num in numbers:
+#     if num % 2 == 0:
+#         print(num, 'even')
+#     elif num % 2 == 1:
+#         print(num, 'odd')
 
-choices = ['s', 'p', 'r']
-ai_choice = random.choice(choices) 
-user_choice = input('select from rock , paper , scissor (r, p, s) : ')
+my_str = 'I sending my resume to a lot companies'       
 
-if user_choice in choices :
-    print(f'user_choice is {user_choice} and ai_choice is {ai_choice}')
+count_e = 0
+count_m = 0
 
-    if user_choice == ai_choice:
-        print('draw')
-
-    elif (user_choice == 's' and ai_choice == 'p') or (user_choice == 'p' and ai_choice == 'r') or (user_choice == 'r' and ai_choice == 's'):
-        print('you win')
-        
+for letter in my_str:
+    if letter == 'e':
+        print('I found e')
+        count_e += 1
+    elif letter == 'm':
+        print('I found m')
+        count_m += 1
     else:
-        print('lost')
-else:
-    print('invalid input')
-    
-        
+        print(letter)
+
+print()        
+print(f"number of e = {count_e}")
+print(f"number of m = {count_m}")
+
