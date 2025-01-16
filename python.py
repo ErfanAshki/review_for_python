@@ -1,13 +1,10 @@
-score = 20
+print(1 in [1,5])
+print('goo' in 'good book')
+print('a' in [1, 'aa', 'bank'])
+print('x' in 'exnovin')
 
-if score == 20:
-    print('perfect')
-elif score >=15 and score < 20:
-    print('good')
-elif score >=10 and score < 15:
-    print('acceptable')
-elif score >=7 and score <10:
-    print('bad')
-else:
-    print('fail')
-    
+print()
+
+print(5 not in (4,9,10))
+print('when' not in 'when I go to ...')
+print('slm' not in 'salam')
