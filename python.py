@@ -5,16 +5,8 @@ person = {
     'job': 'trader'
 }
 
-for data in  person.keys():
+for (topic, data) in  person.items():
+    print(topic)
     print(data)
 
-print()
-
-for data in  person.values():
-    print(data)
-
-print()
-
-for data in  person.items():
-    print(data)
-
+    
