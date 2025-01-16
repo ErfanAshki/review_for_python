@@ -2,7 +2,7 @@ numbers = [1,2,3,4,5,6]
 
 for num in numbers:
     if num == 4:
-        break
+        continue
     print(num)
     
 print('end')
@@ -11,11 +11,12 @@ print('end')
 i = 0 
 
 while i < 10:
-    print(i)
+    i += 1 
     if i == 4:
-        break
+        continue
     
-    i +=1 
+    print(i)
     
 print('end')
+    
     
