@@ -1,13 +1,12 @@
 first_names = ['john', 'sara', 'hadi', 'mahtab']
-last_name = ['smith', 'babaki', 'jeferson', 'omidi']
+last_names = ['smith', 'babaki']
+age = [10,22,19]
 
-# for name in zip(first_names, last_name):
-#     # print(name)
-#     # print(name[0])
-#     print(name[1])
+for item in zip(first_names,last_names,age):
+    print(item)
 
-for first,last in zip(first_names, last_name):
-    print(first)
-    print(last)
-    print()
+for first,last,age  in zip(first_names,last_names,age):
+    print(age)
+    print(last, first)
+
     
