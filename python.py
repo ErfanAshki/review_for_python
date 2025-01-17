@@ -1,10 +1,13 @@
-while True:    
-    user_number = input('Enter a number : ')
+first_names = ['john', 'sara', 'hadi', 'mahtab']
+last_name = ['smith', 'babaki', 'jeferson', 'omidi']
 
-    result = 0
+# for name in zip(first_names, last_name):
+#     # print(name)
+#     # print(name[0])
+#     print(name[1])
 
-    for num in user_number:
-        result = result + int(num)
-        
-    print(result)
-
+for first,last in zip(first_names, last_name):
+    print(first)
+    print(last)
+    print()
+    
