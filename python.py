@@ -1,4 +1,10 @@
-grades = [14, 16, 11, 20, 18, 6, 8]
+while True:    
+    user_number = input('Enter a number : ')
 
+    result = 0
 
-print(sum(grades) / len(grades))
+    for num in user_number:
+        result = result + int(num)
+        
+    print(result)
+
