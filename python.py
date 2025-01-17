@@ -1,13 +1,4 @@
+grades = [14, 16, 11, 20, 18, 6, 8]
 
-for num in range(5):
-    print(num)
 
-print()
-
-for num in range(4,7):
-    print('hi')
-
-print()
-
-for num in range(1,14,3):
-    print(num)
+print(sum(grades) / len(grades))
