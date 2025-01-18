@@ -1,6 +1,20 @@
-for i in range(1,10):
-    for j in range(1,10):
-        print(f"{i*j:5}", end=' ')
-    print()
+print('determine prime number')
+
+
+while True:
+    prime = True
+
+    user_number = int(input('Enter your number : '))
     
-ط
+    for _ in range(2,user_number):
+        if user_number % _ == 0:
+            prime =False
+            break
+        
+    if prime == True:
+        print('number is prime')
+    else:
+        print(f'number is not prime because {user_number} % {_}')
+        
+    print()
+
