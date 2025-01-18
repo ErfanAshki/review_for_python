@@ -9,12 +9,13 @@ user_point = 0
 ai_point = 0 
 
 
-for _ in range(num_of_rounds):
+while num_of_rounds > 0:
     ai_choice = random.choice(choices)
     user_choice = input('Select from paper scissor rock (p, s, r) : ')
-    print('\n')
+    print()
 
     if user_choice in choices:
+        num_of_rounds -= 1
         
         if user_choice == ai_choice:
             print(f"your choice is {user_choice} and ai choice is {ai_choice}")
