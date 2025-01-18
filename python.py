@@ -1,10 +1,10 @@
-my_password = 'erfpass55'
+my_cryptography = '222,248,224,244,214,250,250,126,126'
 my_list = []
 
 
-for i in my_password:
-    my_list.append(str(ord(i) * 2 + 20))
+for num in my_cryptography.split(",") :
+    my_list.append(chr(int((int(num) - 20) / 2)))
+   
     
-print(','.join(my_list))
-print(type(','.join(my_list)))
-    
+print("".join(my_list))  
+
