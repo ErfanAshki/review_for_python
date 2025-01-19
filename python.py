@@ -1,8 +1,7 @@
-def print_words(word, definition, synonym='toxic'):
-    print(f"word is {word} and definition is {definition} and {synonym}")
-    
-    
-print_words('poignant', 'sami')
-print()
-print_words('poignant', 'sami', 'dangerous')
+def sum_numbers(num1, num2):
+    return num1 + num2
 
+
+result = sum_numbers(5,6) + 100
+print(result)
+print(sum_numbers(5,6))
