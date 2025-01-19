@@ -1,7 +1,9 @@
-def sum_numbers(num1, num2):
-    return num1 + num2
+def celsius_to_fahrenheit(degree):
+    result = degree * 1.8 
+    return result + 32 
 
 
-result = sum_numbers(5,6) + 100
-print(result)
-print(sum_numbers(5,6))
+print(celsius_to_fahrenheit(100))
+print(celsius_to_fahrenheit(-74))
+print(celsius_to_fahrenheit(0))
+print(celsius_to_fahrenheit(30))
