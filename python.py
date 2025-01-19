@@ -1,9 +1,9 @@
-def celsius_to_fahrenheit(degree):
-    result = degree * 1.8 
-    return result + 32 
+def sum_some_lists(list1, list2, list3):
+    return list1 + list2 + list3
 
 
-print(celsius_to_fahrenheit(100))
-print(celsius_to_fahrenheit(-74))
-print(celsius_to_fahrenheit(0))
-print(celsius_to_fahrenheit(30))
+a = [1,2,3]
+b = [-9,-8,-7]
+c = [0,100,-100]
+
+print(sum_some_lists(a,b,c))
