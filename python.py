@@ -1,9 +1,11 @@
-def sum_some_lists(list1, list2, list3):
-    return list1 + list2 + list3
+def sum_number_of_list(list):
+    result = 0
 
+    for num in list:
+        result += num
+        
+    return result
 
-a = [1,2,3]
-b = [-9,-8,-7]
-c = [0,100,-100]
+a = [1,2,3,10,-8,0,-5,21]
 
-print(sum_some_lists(a,b,c))
+print(sum_number_of_list(a))
