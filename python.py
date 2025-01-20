@@ -1,12 +1,13 @@
-def check_even_numbers_in_list(list):
-    even_num = []
+def sum_and_sub_for_numbers(num1,num2):
+    sum_result = num1 + num2
+    sub_result = num1 - num2
 
-    for num in list:
-        if num % 2 == 0:
-            even_num.append(num)
+    return (sum_result,sub_result)
 
-    return even_num
+print(sum_and_sub_for_numbers(5,3))
+print(sum_and_sub_for_numbers(54,10))
 
-
-print(check_even_numbers_in_list([1,2,3,5,63,95,2,520,54]))
-print(check_even_numbers_in_list([11,45,10,32,987,65,87,45,88]))
+(a,b) = sum_and_sub_for_numbers(44,50)
+print(a)
+print(b)
+print(a,b)
