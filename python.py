@@ -1,11 +1,12 @@
-def sum_number_of_list(list):
-    result = 0
+def is_even(num):
+    if num % 2 == 0:
+        return True
+    return False
 
-    for num in list:
-        result += num
-        
-    return result
 
-a = [1,2,3,10,-8,0,-5,21]
-
-print(sum_number_of_list(a))
+print(is_even(4))
+print(is_even(1))
+print(is_even(45))
+print(is_even(10))
+print(is_even(33))
+print(is_even(10))
