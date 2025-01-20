@@ -1,12 +1,12 @@
-def is_even(num):
-    if num % 2 == 0:
-        return True
-    return False
+def check_even_numbers_in_list(list):
+    even_num = []
+
+    for num in list:
+        if num % 2 == 0:
+            even_num.append(num)
+
+    return even_num
 
 
-print(is_even(4))
-print(is_even(1))
-print(is_even(45))
-print(is_even(10))
-print(is_even(33))
-print(is_even(10))
+print(check_even_numbers_in_list([1,2,3,5,63,95,2,520,54]))
+print(check_even_numbers_in_list([11,45,10,32,987,65,87,45,88]))
