@@ -1,19 +1,14 @@
-def show_longest_string_in_list(list):
-    final_str = ''
+def show_best_mark_and_student(list):
+    max_mark = 0
+    best_student = ''
     
-    for str in list:
-        if len(str) > len(final_str):
-            final_str = str
+    for mark,stu in list:
+        if mark > max_mark:
+            max_mark = mark
+            best_student = stu
+            
+    return best_student, max_mark
 
-    return final_str, len(final_str)
+school = [(14,'anna'), (17,'ali'), (10,'mmd'), (18,'sara'), (19,'erfan')]
 
-my_list = ['subtract', 'subtraction', 'subtracter', 'subtractive']
-
-print(show_longest_string_in_list(my_list))
-
-print()
-
-max_str , max_str_len = show_longest_string_in_list(my_list)
-print(max_str)
-print(max_str_len)
-print(max_str, max_str_len)
+print(show_best_mark_and_student(school))
