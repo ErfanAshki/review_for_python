@@ -1,13 +1,19 @@
-def sum_and_sub_for_numbers(num1,num2):
-    sum_result = num1 + num2
-    sub_result = num1 - num2
+def show_longest_string_in_list(list):
+    final_str = ''
+    
+    for str in list:
+        if len(str) > len(final_str):
+            final_str = str
 
-    return (sum_result,sub_result)
+    return final_str, len(final_str)
 
-print(sum_and_sub_for_numbers(5,3))
-print(sum_and_sub_for_numbers(54,10))
+my_list = ['subtract', 'subtraction', 'subtracter', 'subtractive']
 
-(a,b) = sum_and_sub_for_numbers(44,50)
-print(a)
-print(b)
-print(a,b)
+print(show_longest_string_in_list(my_list))
+
+print()
+
+max_str , max_str_len = show_longest_string_in_list(my_list)
+print(max_str)
+print(max_str_len)
+print(max_str, max_str_len)
