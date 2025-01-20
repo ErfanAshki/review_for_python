@@ -1,5 +1,9 @@
-def some_keys(*args , **kwargs):    
-    return kwargs , args
+a = 10 
 
-
-print(some_keys(25, 'swift', a=1, b='agile', ss='nimble', q=10))
+def something():
+    a = 20 
+    print(a)
+    
+print(a)
+something()
+print(a)
