@@ -1,13 +1,12 @@
-my_str = 'tHis iS SomE SENtences'
+a = 2 
 
-def first_word_uppercase(str): 
-    """"Return the upper case of first word of string"""
+def some_function(num):
+    global a
+    a = a + num
+    return a
 
-    def get_first_word(str):
-        """"Return the first word of string"""
-        return str.split()[0]
-        
-    str = get_first_word(str)
-    return str.upper()
-
-print(first_word_uppercase(my_str))
+print(a)
+print(some_function(5))
+print(a)
+print(some_function(5))
+print(a)
