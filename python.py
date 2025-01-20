@@ -1,10 +1,6 @@
-def sum_numbers(*args):
-    result = 0
-
-    for num in args:
-        result += num
-    
-    return result
+def some_keys(**kwargs):    
+    return kwargs
 
 
-print(sum_numbers(1,5,8,6,4,2,10,2,5,9,1))
+print(some_keys(a=1, b='agile', ss='nimble', q=10))
+
