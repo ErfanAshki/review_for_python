@@ -1,11 +1,10 @@
-nums = [1,2,3,4]
+names = ['lale ahmadi','mmd naseri','john johnson']
 
-def power_two(num):
-    return num ** 2
+def get_first_name(name):
+    return name.split(' ')[0]
 
-def plus_ten(num):
-    return num + 10
+def get_last_name(name):
+    return name.split(' ')[1]
 
-
-print(list(map(power_two,nums)))
-print(list(map(plus_ten,nums)))
+print(list(map(get_first_name,names)))
+print(list(map(get_last_name,names)))
