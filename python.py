@@ -1,10 +1,21 @@
-names = ['lale ahmadi','mmd naseri','john johnson']
+numbers = [1,2,3,4,5,6,7]
 
-def get_first_name(name):
-    return name.split(' ')[0]
+def plus_one_even_numbers(num):
+  
+    if num % 2 == 0:
+        return num + 1
+    else:
+        return num
 
-def get_last_name(name):
-    return name.split(' ')[1]
 
-print(list(map(get_first_name,names)))
-print(list(map(get_last_name,names)))
+def plus_two_odd_numbers(num):
+
+    if num % 2 == 1:
+        return num + 2 
+    else:
+        return num
+    
+    
+
+print(list(map(plus_one_even_numbers, numbers)))
+print(list(map(plus_two_odd_numbers, numbers)))
