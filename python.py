@@ -1,16 +1,10 @@
-def meaning(dict):
-    dict['mean'] = 'motaham kardan'
-    return dict
+def custom(num_list):
+    num_list.append(100)
+    return num_list
     
-    
-word = {
-    'word1': 'criminate',
-    'word2': 'accuse',
-    'word3': 'indict'
-}
+numbers = [1,2,3]
 
-print(word)
-meaning(word.copy())
-print(meaning(word.copy()))
-print(word)
+print(numbers)
+print(custom(numbers.copy()))
+print(numbers)
 
