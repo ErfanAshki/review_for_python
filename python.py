@@ -1,16 +1,15 @@
-def meaning(dict):
-    copy_of_dict = dict.copy()
-
-    copy_of_dict['mean'] = 'motaham kardan'
-    return copy_of_dict
-
+def factorial(number):
+    result = 1
     
-word = {
-    'word1': 'criminate',
-    'word2': 'accuse',
-    'word3': 'indict'
-}
+    for num in range(1, number + 1):
+        result *= num
+    
+    return result
 
-print(word)
-print(meaning(word))
-print(word)
+
+print(factorial(1))
+print(factorial(2))
+print(factorial(3))
+print(factorial(4))
+print(factorial(5))
+print(factorial(10))
