@@ -1,15 +1,6 @@
-def factorial(number):
-    result = 1
-    
-    for num in range(1, number + 1):
-        result *= num
-    
-    return result
+def add_num(a):
+    if a<3:
+        return add_num(a+1)
+    return a
 
-
-print(factorial(1))
-print(factorial(2))
-print(factorial(3))
-print(factorial(4))
-print(factorial(5))
-print(factorial(10))
+print(add_num(1))
