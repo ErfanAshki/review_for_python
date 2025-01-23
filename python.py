@@ -1,9 +1,10 @@
-numbers = [10,2,14,52,3,-4,0,27]
+names = ['parrinaz khodash', 'erfan', 'mmd kivii', 'lale', 'ahmad']
 
-def more_than_10(num):
-    if num > 10 :
+def give_just_full_names(str):
+    if len(str.split(' ')) > 1:
         return True
     return False
     
-print(list(filter(more_than_10, numbers)))
+    
+print(list(filter(give_just_full_names, names)))
 
