@@ -1,6 +1,10 @@
-a = [1,2,3]
-b = a 
-b[2] = 10
+def custom(num_list):
+    num_list.append(100)
+    return num_list
+    
+numbers = [1,2,3]
 
-print(a)
-print(b)
+print(numbers)
+custom(numbers)
+print(numbers)
+
