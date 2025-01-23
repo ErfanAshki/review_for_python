@@ -1,4 +1,6 @@
-numbers = [1,5,6,4,12,10,5,9]
+a = [1,2,3]
+b = a 
+b[2] = 10
 
-
-print(list(filter(lambda num : num > 6 , numbers)))
+print(a)
+print(b)
