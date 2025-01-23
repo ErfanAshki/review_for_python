@@ -1,10 +1,18 @@
-def max_min_sum_len(*args, list_of_numbers):
-    list_of_numbers.append(args)
+def longest_string_and_len(*args):
+    string_list = []
+    user_input = input('Enter your string : ')
+    string_list.append(user_input)
     
-    return max(args) , min(args) , sum(args) , len(args)
-
-
-list_of_numbers = []
-
-print(max_min_sum_len(1,2,3,5,8,5,88,2,663, list_of_numbers=list_of_numbers))
-print(list_of_numbers)
+    while user_input != 'exit':
+        user_input = input('Enter your string : ')
+        string_list.append(user_input)
+        
+        longest_str = ''
+        for str in string_list:
+            if len(str) > len(longest_str):
+                longest_str = str
+        
+    return longest_str , len(longest_str)
+        
+        
+print(longest_string_and_len())
