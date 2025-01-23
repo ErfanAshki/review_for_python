@@ -1,21 +1,9 @@
-numbers = [1,2,3,4,5,6,7]
+numbers = [10,2,14,52,3,-4,0,27]
 
-def plus_one_even_numbers(num):
-  
-    if num % 2 == 0:
-        return num + 1
-    else:
-        return num
-
-
-def plus_two_odd_numbers(num):
-
-    if num % 2 == 1:
-        return num + 2 
-    else:
-        return num
+def more_than_10(num):
+    if num > 10 :
+        return True
+    return False
     
-    
+print(list(filter(more_than_10, numbers)))
 
-print(list(map(plus_one_even_numbers, numbers)))
-print(list(map(plus_two_odd_numbers, numbers)))
