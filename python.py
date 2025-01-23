@@ -1,10 +1,14 @@
-def custom(num_list):
-    num_list.append(100)
-    return num_list
+def meaning(dict):
+    dict['mean'] = 'motaham kardan'
     
-numbers = [1,2,3]
+    
+word = {
+    'word1': 'criminate',
+    'word2': 'accuse',
+    'word3': 'indict'
+}
 
-print(numbers)
-custom(numbers)
-print(numbers)
+print(word)
+meaning(word)
+print(word)
 
