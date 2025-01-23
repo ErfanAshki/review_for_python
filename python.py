@@ -1,18 +1,12 @@
-def longest_string_and_len(*args):
-    string_list = []
-    user_input = input('Enter your string : ')
-    string_list.append(user_input)
+def divisors(num):
+    divisors_list = []
     
-    while user_input != 'exit':
-        user_input = input('Enter your string : ')
-        string_list.append(user_input)
-        
-        longest_str = ''
-        for str in string_list:
-            if len(str) > len(longest_str):
-                longest_str = str
-        
-    return longest_str , len(longest_str)
-        
-        
-print(longest_string_and_len())
+    for i in range(1,num+1):
+        if num % i == 0:
+            divisors_list.append(i)
+    
+    return divisors_list
+
+print(divisors(10))
+print(divisors(12))
+print(divisors(81))
