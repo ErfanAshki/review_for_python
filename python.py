@@ -1,10 +1,5 @@
-names = ['parrinaz khodash', 'erfan', 'mmd kivii', 'lale', 'ahmad']
+numbers = [1,2,5,6,8,89,2,52]
 
-def give_just_full_names(str):
-    if len(str.split(' ')) > 1:
-        return True
-    return False
-    
-    
-print(list(filter(give_just_full_names, names)))
+
+print(list(filter(lambda num : num > 8 , numbers)))
 
