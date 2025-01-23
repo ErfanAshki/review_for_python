@@ -1,5 +1,4 @@
-numbers = [1,2,5,6,8,89,2,52]
+names = ['parrinaz khodash', 'erfan', 'mmd kivii', 'ahmad']
 
-
-print(list(filter(lambda num : num > 8 , numbers)))
+print(list(map(lambda word : word.split(' ')[0], names)))
 
