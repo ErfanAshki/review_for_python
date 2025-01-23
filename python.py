@@ -1,6 +1,12 @@
-def add_num(a):
-    if a<3:
-        return add_num(a+1)
-    return a
+def factorial(number):
+    if number == 1:
+        return 1
+    return number * factorial(number - 1)
 
-print(add_num(1))
+
+print(factorial(1))
+print(factorial(2))
+print(factorial(3))
+print(factorial(4))
+print(factorial(5))
+print(factorial(6))
