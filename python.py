@@ -1,5 +1,6 @@
 def meaning(dict):
     dict['mean'] = 'motaham kardan'
+    return dict
     
     
 word = {
@@ -9,6 +10,7 @@ word = {
 }
 
 print(word)
-meaning(word)
+meaning(word.copy())
+print(meaning(word.copy()))
 print(word)
 
