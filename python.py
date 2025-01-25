@@ -13,17 +13,16 @@ class House():
 house1 = House(4, 'red', '300')
 house2 = House(3, 'white', '150')
 
+house1.num_of_room = 1
+house2.area = 100
+
 print(house1.num_of_room)
-print(house2.num_of_room)
-print()
-print(house1.color)
-print(house2.color)
-print()
-print(house1.area)
 print(house2.area)
-print()
-print(house1.description_of_house())
-print(house2.description_of_house())
-print()
-print(house1.country)
-print(house2.country)
+
+
+house1.x = 'xxx'
+house2.new_attr = 'attrrr'
+
+print(house1.x)
+print(house2.new_attr)
+
