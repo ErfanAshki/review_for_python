@@ -19,6 +19,12 @@ house2.area = 100
 print(house1.num_of_room)
 print(house2.area)
 
+house1.country = 'usa'
+house2.country = 'germany'
+
+print(house1.country)
+print(house2.country)
+
 
 house1.x = 'xxx'
 house2.new_attr = 'attrrr'
