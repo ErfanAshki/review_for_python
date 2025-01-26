@@ -8,8 +8,13 @@ class Person():
     
     
 class Student(Person):
-    pass
+    def __init__(self, first_name, last_name, major):
+        super().__init__(first_name, last_name)
+        self.major = major
+        
+    def fullname(self):
+        return f"{self.first_name}  {self.last_name}  {self.major}"
 
 
-ali = Student('ali', 'alavi')
+ali = Student('ali', 'alavi', 'computer Engineering')
 print(ali.fullname())
