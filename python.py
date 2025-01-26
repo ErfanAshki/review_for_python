@@ -1,37 +1,35 @@
-class Person():
-    def __init__(self, first_name, last_name):
-        self.first_name = first_name
-        self.last_name = last_name
+class Shape:
+    def __init__(self, kind, name):
+        self.kind = kind
+        self.name = name
         
-    def fullname(self):
-        return f"{self.first_name}  {self.last_name}"
+    def area(self):
+        raise NotImplementedError("All shapes should be have own area method")
     
+
+class Square(Shape):
+    def __init__(self, kind, name, side_length):
+        super().__init__(kind, name)
+        self.side_length = side_length
+        
+    def area(self):
+        return self.side_length * self.side_length
+        
+
+class Circle(Shape):
+    pi = 3.14
+
+    def __init__(self, kind, name, r):
+        super().__init__(kind, name)
+        self.r = r
+
+    def area(self):
+        return Circle.pi * self.r * self.r
     
-class Student(Person):
-    def __init__(self, first_name, last_name, major):
-        super().__init__(first_name, last_name)
-        self.major = major
         
-    def fullname(self):
-        return f"{self.first_name}  {self.last_name}  {self.major}"
+sq = Square('square', 'first_sq', 10)
+ci = Circle('circle', 'first_ci', 10)
 
+print(sq.area())
+print(ci.area())
 
-class Teacher(Person):
-    def __init__(self, first_name, last_name, university, department):
-        super().__init__(first_name, last_name)
-        self.university = university
-        self.department = department
-        
-    def fullname(self):
-        return f"{self.first_name}  {self.last_name}  {self.university} {self.department}"
-
-
-majid_teac = Teacher('majid', 'jasemi', 'tehran', 'math')
-print(majid_teac.fullname())
-
-
-ali_stu = Student('ali', 'alavi', 'computer Engineering')
-print(ali_stu.fullname())
-
-
-help(Teacher)
