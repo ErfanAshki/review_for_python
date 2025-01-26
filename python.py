@@ -16,5 +16,21 @@ class Student(Person):
         return f"{self.first_name}  {self.last_name}  {self.major}"
 
 
-ali = Student('ali', 'alavi', 'computer Engineering')
-print(ali.fullname())
+class Teacher(Person):
+    def __init__(self, first_name, last_name, university, department):
+        super().__init__(first_name, last_name)
+        self.university = university
+        self.department = department
+        
+    def fullname(self):
+        return f"{self.first_name}  {self.last_name}  {self.university} {self.department}"
+
+
+majid_teac = Teacher('majid', 'jasemi', 'tehran', 'math')
+print(majid_teac.fullname())
+
+
+ali_stu = Student('ali', 'alavi', 'computer Engineering')
+print(ali_stu.fullname())
+
+
