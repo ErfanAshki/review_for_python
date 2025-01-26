@@ -34,3 +34,4 @@ ali_stu = Student('ali', 'alavi', 'computer Engineering')
 print(ali_stu.fullname())
 
 
+help(Teacher)
