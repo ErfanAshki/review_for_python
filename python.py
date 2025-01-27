@@ -25,13 +25,11 @@ class Time:
         
         return Time(hours%24, minutes%60, seconds%60)
     
-    def __lt__(self, other):
-        return( self.hours < other.hours ) or \
-            (self.hours == other.hours and self.minutes < other.minutes) or \
-            (self.hours == other.hours and self.minutes == other.minutes and self.seconds < other.seconds)
+    def __le__(self, other):
+        return self.hours <= other.hours
     
     
-my_time = Time(10, 57, 30)
-gym_time = Time(10, 57, 44)
+my_time = Time(11, 57, 30)
+gym_time = Time(11, 57, 44)
 
-print(my_time < gym_time)
+print(my_time <= gym_time)
