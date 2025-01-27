@@ -1,29 +1,16 @@
-class Line:
-    def __init__(self, a, b):
-        self.a = a
-        self.b = b
+class Time:
+    def __init__(self, hour, minute, second):
+        self.hour = hour
+        self.minute = minute
+        self.second = second
+        
         
     def __str__(self):
-        return f"Line : a=({self.a[0]},{self.a[1]})  b=({self.b[0]},{self.b[1]})"
-        
-        
-    def calc_length(self):
-        return ((self.b[1] - self.a[1]) ** 2 + (self.b[0] - self.a[0]) ** 2) ** 0.5
+        return f"{self.hour:02}:{self.minute:02}:{self.second:02}"
     
     
-    def calc_slope(self):
-        return (self.b[1] - self.a[1]) / (self.b[0] - self.a[0])
-    
-    
-line1 = Line((1,1) , (3,3))
+my_time = Time(10, 25, 30)
+gym_time = Time(18, 5, 0)
 
-print(line1)
-print(line1.calc_length())
-print(line1.calc_slope())
-
-line2 = Line((4,9) , (8,1))
-
-print(line2)
-print(line2.calc_length())
-print(line2.calc_slope())
-
+print(my_time)
+print(gym_time)
