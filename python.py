@@ -25,13 +25,13 @@ class Time:
         
         return Time(hours%24, minutes%60, seconds%60)
     
-    def __eq__(self, other):
-         return( self.hours == other.hours ) and \
-            (self.minutes == other.minutes) and \
-            (self.seconds == other.seconds)
+    def __ne__(self, other):
+         return( self.hours != other.hours ) or \
+            (self.minutes != other.minutes) or \
+            (self.seconds != other.seconds)
     
     
 my_time = Time(11, 57, 44)
-gym_time = Time(11, 57, 44)
+gym_time = Time(10, 57, 44)
 
-print(my_time == gym_time)
+print(my_time != gym_time)
