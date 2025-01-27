@@ -8,12 +8,12 @@ class Square:
     def __len__(self):
         return self.side_length
     
+    def __del__(self):
+        print (f"object with {self.side_length} length was deleted .")
+    
     
 s1 = Square(10)
 s2 = Square(5)
 
-print(s1)
+
 print(s2)
-print()
-print(len(s1))
-print(len(s2))
