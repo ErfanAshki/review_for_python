@@ -17,10 +17,16 @@ class Time:
         
     def __str__(self):
         return f"{self.hours:02}:{self.minutes:02}:{self.seconds:02}"
-    
-    
-my_time = Time(10, 25, 30)
-gym_time = Time(18, 5, 0)
 
-print(my_time)
-print(gym_time)
+    def __add__(self, other):
+        seconds = self.seconds + other.seconds
+        minutes = self.minutes + other.minutes + seconds // 60  
+        hours = self.hours + other.hours + minutes // 60
+        
+        return Time(hours%24, minutes%60, seconds%60)
+    
+    
+my_time = Time(13, 57, 20)
+gym_time = Time(13, 2, 40)
+
+print(my_time + gym_time)
