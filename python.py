@@ -30,22 +30,22 @@ class Deposit:
         self.amount -= amount
         other.amount += amount
         print(f"{amount} amount was transferred from {self.name} account to {other.name} account")
-        return other
     
+    
+    def deposit(self, amount):
+        if amount < 0:
+            print('Amount could not be less than 0')
+            return
+        
+        self.amount += amount
+        
 
 john_dep = Deposit('john', 1000)
 david_dep = Deposit('david', 500)    
     
-print(john_dep + david_dep)
 
-john_dep += david_dep
-
-print(john_dep)
-print(david_dep)
-
-print(john_dep == david_dep)
-
-john_dep.transfer(david_dep, 500)
+john_dep.deposit(250)
+david_dep.deposit(400)
 
 print(john_dep)
 print(david_dep)
