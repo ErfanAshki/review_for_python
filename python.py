@@ -1,33 +1,59 @@
-def make_space (number_of_star , num) : 
-    number_of_space = int((num - number_of_star) / 2) 
-    print(number_of_space * ' ' , end= '') 
-    print(number_of_star * '*' , end= '') 
-    print(number_of_space * ' ')  
-
-
-
-
-
-def make_diamond (num) :
-    print()  
-    for i in range(1,num+1,2) :
-        make_space(i,num)   
+class Deposit:
+    def __init__(self, name, amount=0):
+        self.name = name
+        self.amount = amount
+        
+    def __str__(self):
+        return f"Owner : {self.name} | amount : {self.amount}"
     
-    for i in range(1,num,2) :
-        make_space(num-i-1 , num)    
+    def __repr__(self):
+        return f"{self.__class__.__name__}(name={self.name} , amount={self.amount})"
+    
+    def __add__(self, other):
+        name = self.name + '|' + other.name
+        amount = self.amount + other.amount
+        return Deposit(name , amount)
+    
+    def __iadd__(self, other):
+        self.amount += other.amount
+        other.amount = 0
+        return self
+    
+    def __eq__(self, other):
+        return self.amount == other.amount
+    
+    def transfer(self, other, amount):
+        if self.amount < amount:
+            print('Not enough amount for transfer')
+            return
+        
+        self.amount -= amount
+        other.amount += amount
+        print(f"{amount} amount was transferred from {self.name} account to {other.name} account")
+    
+    
+    def deposit(self, amount):
+        if amount < 0:
+            print('Amount could not be less than 0')
+            return
+        
+        self.amount += amount
+        
+        
+    def withdraw(self, amount):
+        if amount > self.amount:
+            print(f'amount can not be bigger than {self.amount}')
+            return
+            
+        self.amount -= amount
+        
 
-    # for i in range (num) :
-    #     if i < num / 2 : 
-    #         print(i * 2 + 1) 
-    #     else : 
-    #         print((num - i) * 2 - 1 )  
-      
-user_number = int(input("Enter a number : ")) 
-
-if user_number == 0 : 
-    print('Invalid input , please enter a correct number')
-elif user_number % 2 == 0 : 
-    user_number += 1 
+john_dep = Deposit('john', 1000)
+david_dep = Deposit('david', 500)    
 
 
-make_diamond(user_number) 
+john_dep.withdraw(250)
+david_dep.withdraw(400)
+
+print(john_dep)
+print(david_dep)
