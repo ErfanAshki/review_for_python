@@ -39,13 +39,21 @@ class Deposit:
         
         self.amount += amount
         
+        
+    def withdraw(self, amount):
+        if amount > self.amount:
+            print(f'amount can not be bigger than {self.amount}')
+            return
+            
+        self.amount -= amount
+        
 
 john_dep = Deposit('john', 1000)
 david_dep = Deposit('david', 500)    
-    
 
-john_dep.deposit(250)
-david_dep.deposit(400)
+
+john_dep.withdraw(250)
+david_dep.withdraw(400)
 
 print(john_dep)
 print(david_dep)
