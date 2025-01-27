@@ -25,11 +25,11 @@ class Time:
         
         return Time(hours%24, minutes%60, seconds%60)
     
-    def __le__(self, other):
-        return self.hours <= other.hours
+    def __ge__(self, other):
+        return self.hours >= other.hours
     
     
 my_time = Time(11, 57, 30)
 gym_time = Time(11, 57, 44)
 
-print(my_time <= gym_time)
+print(my_time >= gym_time)
