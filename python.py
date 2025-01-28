@@ -1,6 +1,4 @@
-a = 5
-b= 0
+import mymoduile
 
-print(a/b)
 
 
