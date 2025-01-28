@@ -1,4 +1,6 @@
 a = [1,2,3,4]
 
-print(a[5])
+a.remove(10)
+
+print(a)
 
