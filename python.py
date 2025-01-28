@@ -1,7 +1,4 @@
-a = 10
+a = [1,2,3,4]
 
-b = 'sss'
+print(a[5])
 
-print(a+b)
-
-print(int([1,6,5]))
