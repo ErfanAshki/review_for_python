@@ -1,20 +1,9 @@
-print('start')
+def calc_income(income):
+    if income <= 0 : 
+        raise Exception('Income must be bigger than 0')
+        
+    return income * 2
 
-try:
-    print(10/0)
-    print(100/user_num)
-    import mymodule
-    print('second')
-    
-except ModuleNotFoundError:
-    print('This module do not exist')
-    
-except NameError:
-    print('This variable do not define')
-    
-except ZeroDivisionError:
-    print('Numbers can not divide to zero')
-    
+print(calc_income(-55))
+
 print('end')
-    
-    
