@@ -4,6 +4,10 @@ def calc_income(income):
         
     return income * 2
 
-print(calc_income(-55))
+try:
+    print(calc_income(-55))
+except:
+    print('Exception occurred')    
 
 print('end')
+
