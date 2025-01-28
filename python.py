@@ -1,10 +1,9 @@
 print('start')
 
-user_num = int(input('Enter a number : '))
-
 try:
-    print('first')
+    import mymodule
     print(100/user_num)
+    print(10/0)
     print('second')
     
 except:
