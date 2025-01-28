@@ -1,4 +1,7 @@
-a = 10 
-b = c +5 
+a = 10
 
-print(b)
+b = 'sss'
+
+print(a+b)
+
+print(int([1,6,5]))
