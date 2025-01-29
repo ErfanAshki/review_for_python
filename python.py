@@ -1,26 +1,26 @@
 a = 10
 
 try : 
-    print(a/0)
+    print(a/20)
 except ZeroDivisionError:
     print('Zero error')
-except ModuleNotFoundError:
-    print('Module error')
 else:
     print('Code is ok')
+finally:
+    print('Finally')
 
 print('End')
     
 
-a = 10
+# a = 10
 
-try : 
-    print(a/10)
-except ZeroDivisionError:
-    print('Zero error')
-except ModuleNotFoundError:
-    print('Module error')
-else:
-    print('Code is ok')
+# try : 
+#     print(a/0)
+# except ZeroDivisionError:
+#     print('Zero error')
+# else:
+#     print('Code is ok')
+# finally:
+#     print('Finally')
 
-print('End')
+# print('End')
