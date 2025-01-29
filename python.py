@@ -1,10 +1,21 @@
-def calc_income(income):
-    if income <= 0 : 
-        assert income>0 , 'Income must be bigger than 0'
-        
-    return income * 2
+try:
+    print(10/0)
+except ZeroDivisionError as error:
+    print('Exception')
+    print(error)
 
-print(calc_income(-55))
 
-print('end')
+try:
+    import moduke
+except ModuleNotFoundError as error:
+    print('Exception')
+    print(error)
+    
 
+try:
+    print(a+b)
+except Exception as error:
+    print('Exception')
+    print(error)
+    
+    
