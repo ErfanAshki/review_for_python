@@ -1,21 +1,26 @@
-try:
-    print(10/0)
-except ZeroDivisionError as error:
-    print('Exception')
-    print(error)
+a = 10
 
+try : 
+    print(a/0)
+except ZeroDivisionError:
+    print('Zero error')
+except ModuleNotFoundError:
+    print('Module error')
+else:
+    print('Code is ok')
 
-try:
-    import moduke
-except ModuleNotFoundError as error:
-    print('Exception')
-    print(error)
+print('End')
     
 
-try:
-    print(a+b)
-except Exception as error:
-    print('Exception')
-    print(error)
-    
-    
+a = 10
+
+try : 
+    print(a/10)
+except ZeroDivisionError:
+    print('Zero error')
+except ModuleNotFoundError:
+    print('Module error')
+else:
+    print('Code is ok')
+
+print('End')
