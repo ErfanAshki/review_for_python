@@ -1,6 +1,6 @@
 f = open('hi.txt', 'r')
 
-a = f.read()
+a = f.readlines()
 
-print(a.split('\n'))
+print(a)
 
