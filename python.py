@@ -1,15 +1,15 @@
-class NegativeAgeError(Exception):
-    pass
+while True:
+    user_number = input('Enter a number : ')
+
+    try:
+        result = int(user_number)
+        break
+    except ValueError :
+        try:
+            result = float(user_number)
+            break
+        except ValueError:
+            print('You should enter a number .')
 
 
-def check_age(age):
-    if age < 0 :
-        raise NegativeAgeError('Age can not be negative .')
-    
-    return f"Your age is {age}"
-
-
-user_age = int(input('Enter your age : '))
-
-print(check_age(user_age))
-    
+print(f"The number is {result}")    
