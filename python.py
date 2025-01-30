@@ -1,6 +1,15 @@
 f = open('hi.txt', 'r')
 
-a = f.readline(6)
+names = f.read()
+names = names.split('\n')
 
-print(a)
+print(names)
 
+while True:
+    user_name = input('Enter your name : ')
+    if user_name == 'exit':
+        break
+    names.append(user_name)
+    
+    print(names)
+    
