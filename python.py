@@ -1,4 +1,4 @@
 with open('word.txt', 'w') as f:
-    f.writelines(['sanctuary\n','harborage\n','shelter\n','haven'])
-    
+    names = ['john','david','cena']
+    f.write('\n'.join(names))
         
