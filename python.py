@@ -1,15 +1,4 @@
-while True:
-    user_number = input('Enter a number : ')
+f = open('hi.txt', 'w')
 
-    try:
-        result = int(user_number)
-        break
-    except ValueError :
-        try:
-            result = float(user_number)
-            break
-        except ValueError:
-            print('You should enter a number .')
+f.write('hello')
 
-
-print(f"The number is {result}")    
