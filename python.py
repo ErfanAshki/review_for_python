@@ -1,26 +1,15 @@
-a = 10
+class NegativeAgeError(Exception):
+    pass
 
-try : 
-    print(a/20)
-except ZeroDivisionError:
-    print('Zero error')
-else:
-    print('Code is ok')
-finally:
-    print('Finally')
 
-print('End')
+def check_age(age):
+    if age < 0 :
+        raise NegativeAgeError('Age can not be negative .')
     
+    return f"Your age is {age}"
 
-# a = 10
 
-# try : 
-#     print(a/0)
-# except ZeroDivisionError:
-#     print('Zero error')
-# else:
-#     print('Code is ok')
-# finally:
-#     print('Finally')
+user_age = int(input('Enter your age : '))
 
-# print('End')
+print(check_age(user_age))
+    
