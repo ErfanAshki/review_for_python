@@ -1,10 +1,8 @@
-f = open('hi.txt', 'r')
+names = []
 
-try:
-    names = f.read()
-    names = names.split('\n')
-    print(names)
+with open('hi.txt', 'r') as f : 
+    for name in f.read().split('\n'):
+        names.append(name) 
         
-finally:
-    f.close()
-    
+print(names)
+        
