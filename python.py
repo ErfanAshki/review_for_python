@@ -1,6 +1,6 @@
-f = open('hi.txt', 'w')
+f = open('hi.txt', 'r')
 
-f.write('hello\n')
-f.write('bye\n')
-f.write('how are you??')
-f.writelines('\nokkk')
+a = f.read()
+
+print(a.split('\n'))
+
