@@ -1,6 +1,9 @@
 f = open('hi.txt', 'r')
 
-a = f.readlines()
+a = f.readline()
+a = f.readline()
+a = f.readline()
+
 
 print(a)
 

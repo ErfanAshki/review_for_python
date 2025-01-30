@@ -1,5 +1,4 @@
-nectarine
-pineapple
+nectarine pineapple
 melon
 peach
 cantaloupe
