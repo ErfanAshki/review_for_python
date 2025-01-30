@@ -1,4 +1,4 @@
-with open('word.txt', 'w') as f:
-    names = ['john','david','cena']
-    f.write('\n'.join(names))
+with open('word.txt', 'a') as f:
+    f.write('\nerfan pari')
+    f.writelines(['\nhi', '\nbye'])
         
