@@ -1,0 +1,8 @@
+erfan 20
+maryam 14
+ali 18
+ghasem 16
+hadi 14.0
+mmd 14.0
+mehi 9.0
+nima 20.0
