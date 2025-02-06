@@ -3,10 +3,10 @@ import tkinter as tk
 
 window = tk.Tk()
 
-text1 = tk.Label(master=window, text='hello world')
-text2 = tk.Label(master=window, text='bye world')
+entry1 = tk.Entry(master=window)
+entry2 = tk.Entry(master=window)
 
-text1.pack()
-text2.pack()
+entry1.pack()
+entry2.pack()
 
 window.mainloop()
