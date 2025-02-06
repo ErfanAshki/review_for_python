@@ -3,17 +3,12 @@ import tkinter as tk
 
 window = tk.Tk()
 
-text_var = tk.StringVar()
+def print_something():
+    print('something')
 
-entry = tk.Entry(master=window, textvariable=text_var)
-label = tk.Label(master=window, textvariable=text_var)
 
-lb = tk.Label(master=window, text='hi')
-lbl = tk.Label(master=window, text='kha')
+btn = tk.Button(master=window, text='click me !', command=print_something)
 
-entry.pack(side=tk.BOTTOM)
-label.pack(side=tk.TOP)
-lb.pack(side=tk.RIGHT)
-lbl.pack(side=tk.LEFT)
+btn.pack()
 
 window.mainloop()
