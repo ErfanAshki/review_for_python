@@ -3,16 +3,15 @@ import tkinter as tk
 
 window = tk.Tk()
 
-lbl = tk.Label(master=window, text='')
-eny = tk.Entry(master=window)
+first_name_lbl = tk.Label(master=window, text='first_name : ')
+last_name_lbl = tk.Label(master=window, text='last_name : ')
 
-def show_entry_in_label():
-    lbl['text'] = eny.get()
+first_name_ent = tk.Entry(master=window)
+last_name_ent = tk.Entry(master=window)
 
-btn = tk.Button(master=window, text='click me !', command=show_entry_in_label)
-
-eny.pack()
-btn.pack()
-lbl.pack()
+first_name_lbl.grid(row=0, column=0)
+first_name_ent.grid(row=0, column=1)
+last_name_lbl.grid(row=1, column=0)
+last_name_ent.grid(row=1, column=1)
 
 window.mainloop()
