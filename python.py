@@ -6,13 +6,13 @@ window = tk.Tk()
 
 title = tk.Label(master=window, text='Enter your data')
 
-first_name_lbl = tk.Label(master=window, text='first_name : ')
-last_name_lbl = tk.Label(master=window, text='last_name : ')
-age_lbl = tk.Label(master=window, text='age : ')
+first_name_lbl = tk.Label(master=window, text='first_name : ',width=15, height=2)
+last_name_lbl = tk.Label(master=window, text='last_name : ',width=10, height=4)
+age_lbl = tk.Label(master=window, text='age : ',width=10, height=6)
 
-first_name_ent = tk.Entry(master=window)
-last_name_ent = tk.Entry(master=window)
-age_ent = tk.Entry(master=window)
+first_name_ent = tk.Entry(master=window, width=10)
+last_name_ent = tk.Entry(master=window, width=20)
+age_ent = tk.Entry(master=window, width=30)
 
 btn = tk.Button(master=window, text='submit')
 
