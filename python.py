@@ -3,10 +3,12 @@ import tkinter as tk
 
 window = tk.Tk()
 
-entry1 = tk.Entry(master=window)
-entry2 = tk.Entry(master=window)
+text_var = tk.StringVar()
 
-entry1.pack()
-entry2.pack()
+entry = tk.Entry(master=window, textvariable=text_var)
+label = tk.Label(master=window, textvariable=text_var)
+
+entry.pack()
+label.pack()
 
 window.mainloop()
