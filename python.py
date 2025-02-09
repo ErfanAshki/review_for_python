@@ -14,9 +14,12 @@ fah_ent = tk.Entry(master=window, width=30, textvariable=fahrenheit_val)
 
 def convert_fahrenheit_to_celsius():
     result = fah_ent.get()
-    result = (float(result) - 32) * 5 / 9
-    result_lbl['text'] = result
-    
+    try:
+        result = (float(result) - 32) * 5 / 9
+        result_lbl['text'] = result
+    except ValueError:
+        result_lbl['text'] = 'You should enter a number'
+
 
 calc_btn = tk.Button(master=window, text='calc', width=10, command=convert_fahrenheit_to_celsius)
 
