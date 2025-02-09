@@ -1,5 +1,6 @@
 import tkinter as tk 
 from tkinter import W, E, N, S
+from tkinter import ttk
 
 
 window = tk.Tk()
@@ -10,7 +11,7 @@ fah_lbl = tk.Label(master=window, text='fahrenheit : ')
 cel_lbl = tk.Label(master=window, text='celsius : ')
 result_lbl = tk.Label(master=window, text='Result will be displayed here')
 
-fah_ent = tk.Entry(master=window, width=30, textvariable=fahrenheit_val)
+fah_ent = ttk.Entry(master=window, width=30, textvariable=fahrenheit_val)
 
 def convert_fahrenheit_to_celsius(*args):
     result = fah_ent.get()
@@ -21,7 +22,7 @@ def convert_fahrenheit_to_celsius(*args):
         result_lbl['text'] = 'You should enter a number'
 
 
-calc_btn = tk.Button(master=window, text='calc', width=10, command=convert_fahrenheit_to_celsius)
+calc_btn = ttk.Button(master=window, text='calc', width=10, command=convert_fahrenheit_to_celsius)
 
 fah_lbl.grid(row=0, column=0, padx=10, pady=(10,20))
 fah_ent.grid(row=0, column=1, pady=(10,20))
