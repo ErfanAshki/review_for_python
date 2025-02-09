@@ -20,7 +20,7 @@ cel_lbl.grid(row=1, column=0, padx=10, pady=(5,20))
 
 result_lbl.grid(row=1, column=1, pady=(5,20))
 
-
+window.title('Converting Temperature')
 
 window.mainloop()
 
