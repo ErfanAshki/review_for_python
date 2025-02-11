@@ -6,8 +6,14 @@ def my_decorator(input_function):
         
     return wrapper
 
+@my_decorator
 def say_hello():
     print('hello')
     
-a = my_decorator(say_hello)
-a()
+
+@my_decorator
+def say_gn():
+    print('gn')
+    
+say_hello()
+say_gn()
