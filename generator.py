@@ -1,11 +1,12 @@
-def sum_two_numbers(x,y):
-    return x + y 
+def something():
+    def say_hello(name):
+        return f"Hello {name}"
 
+    def say_gn():
+        print('Gn')
 
-def run_functions(your_func, a, b):
-    print('start')
-    print(your_func(a, b))
-    print('end')
-    
-run_functions(sum_two_numbers, 5, 7)
-
+    say_gn()
+    return say_hello('erfan')
+        
+print(something())
+print(say_hello('erfan'))
