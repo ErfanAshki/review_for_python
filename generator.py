@@ -1,19 +1,14 @@
-def my_decorator(input_function):
+def run_twice(input_func):
     def wrapper():
-        print('start decorator')
-        input_function()
-        print('end decorator')
-        
+        input_func()
+        input_func()
+    
     return wrapper
 
-@my_decorator
-def say_hello():
-    print('hello')
-    
+@run_twice
+def write_name():
+    print('Erfan')
 
-@my_decorator
-def say_gn():
-    print('gn')
-    
-say_hello()
-say_gn()
+
+write_name()
+
