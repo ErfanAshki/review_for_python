@@ -1,12 +1,10 @@
 def something():
-    def say_hello(name):
-        return f"Hello {name}"
+    def add_two_numbers(a, b):
+        return a + b
+    
+    return add_two_numbers
 
-    def say_gn():
-        print('Gn')
 
-    say_gn()
-    return say_hello('erfan')
-        
-print(something())
-print(say_hello('erfan'))
+a = something()
+print(a(2,3))
+print(a)
