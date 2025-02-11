@@ -1,14 +1,20 @@
-def run_twice(input_func):
-    def wrapper():
-        input_func()
-        input_func()
-    
-    return wrapper
+def outer_decorator(n):
+    def run_many_times(input_func):
+        def wrapper():
+            for i in range(n):
+                input_func()
+        return wrapper
+    return run_many_times
 
-@run_twice
-def write_name():
+
+@outer_decorator(4)
+def first_name():
     print('Erfan')
 
+@outer_decorator(2)
+def last_name():
+    print('Ashki')
 
-write_name()
+first_name()
+last_name()
 
