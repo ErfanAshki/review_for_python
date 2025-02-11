@@ -1,10 +1,13 @@
-def something():
-    def add_two_numbers(a, b):
-        return a + b
+def my_decorator(input_function):
+    def wrapper():
+        print('start decorator')
+        input_function()
+        print('end decorator')
+        
+    return wrapper
+
+def say_hello():
+    print('hello')
     
-    return add_two_numbers
-
-
-a = something()
-print(a(2,3))
-print(a)
+a = my_decorator(say_hello)
+a()
