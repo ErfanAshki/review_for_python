@@ -1,3 +1,5 @@
-nums = [x ** 2 for x in range(5)]
+celsius = [0, 10, 20.1, 34.5]
 
-print(nums)
+fahrenheit = [(9/5) * item + 32 for item in celsius]
+
+print(fahrenheit)
