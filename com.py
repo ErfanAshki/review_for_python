@@ -1,19 +1,14 @@
-numbers = []
+list1 = [1,2,3]
+list2 = ['a', 'b', 'c']
+# combined = []
 
-for nums in range(2,50):
-    prime = True
-    
-    for i in range(2,nums):
-        if nums % i == 0:
-            prime = False
-            break
-     
-    if prime:   
-        numbers.append(nums)
-    
+# for num in list1:
+#     for letter in list2:
+#         if num != letter:
+#             combined.append((num, letter))
+            
+# print(combined)
 
-print(numbers)
+combined = [(num, letter) for num in list1 for letter in list2 if num != letter]
 
-primes = [x for x in range(2,50) if all(x % y != 0 for y in range(2,x))]
-
-print(primes)
+print(combined)
