@@ -1,5 +1,4 @@
-celsius = [0, 10, 20.1, 34.5]
 
-fahrenheit = [(9/5) * item + 32 for item in celsius]
+numbers = [num ** 2  for num in range(15) if num ** 2 < 100]
 
-print(fahrenheit)
+print(numbers)
