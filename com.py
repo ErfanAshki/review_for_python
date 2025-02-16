@@ -1,14 +1,9 @@
-list1 = [1,2,3]
-list2 = ['a', 'b', 'c']
-# combined = []
+from random import random, randint, shuffle
 
-# for num in list1:
-#     for letter in list2:
-#         if num != letter:
-#             combined.append((num, letter))
-            
-# print(combined)
+my_list = [1,2,3,4,5,6]
 
-combined = [(num, letter) for num in list1 for letter in list2 if num != letter]
-
-print(combined)
+print(my_list)
+print(random())
+print(randint(0,100))
+print(shuffle(my_list))
+print(my_list)
