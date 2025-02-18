@@ -1,5 +1,6 @@
-dict1 = {'a': 1, 'b': 2, 'c': 3}
-dict2 = {'e': 10, 'f': 20, 'g': 30}
-dict3 = dict1 | dict2
+list1 = ['word', 'calocation', 'definition']
+list2 = ['impasse', 'reach an', 'bon bast']
+list3 = ['guile', 'guide', 'neyrang']
 
-print(dict3)
+print(dict(zip(list1, list2)))
+print(dict(zip(list1, list3)))
