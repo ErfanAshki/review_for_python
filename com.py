@@ -1,9 +1,5 @@
-from random import random, randint, shuffle
+dict1 = {'a': 1, 'b': 2, 'c': 3}
+dict2 = {'e': 10, 'f': 20, 'g': 30}
+dict3 = dict1 | dict2
 
-my_list = [1,2,3,4,5,6]
-
-print(my_list)
-print(random())
-print(randint(0,100))
-print(shuffle(my_list))
-print(my_list)
+print(dict3)
