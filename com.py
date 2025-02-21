@@ -1,9 +1,9 @@
 import math
 
 
-print(math.fabs(1.4))
-print(math.fabs(-5.3))
-print(math.fabs(22))
-print(math.fabs(-10))
-print(math.fabs(-0.1))
+print(math.factorial(1))
+print(math.factorial(2))
+print(math.factorial(3))
+print(math.factorial(4))
+print(math.factorial(5))
 
