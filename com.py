@@ -1,9 +1,11 @@
-import math
+import pyqrcode
+import png
 
+text = 'slm khoshgele'
 
-print(math.sin(120))
-print(math.cos(45))
-print(math.tan(1))
-print(math.asin())
-print(math.acos())
-print(math.atan())
+qr_code = pyqrcode.create(text)
+
+qr_code.svg('qr_svg', scale=6)
+
+qr_code.png('qr_png.png', scale=6)
+
