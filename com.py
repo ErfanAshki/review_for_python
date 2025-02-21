@@ -1,16 +1,8 @@
-from openpyxl import Workbook
+from openpyxl import load_workbook
 
-workbook = Workbook()
+workbook = load_workbook(filename='new_excel.xlsx')
 sheet = workbook.active
 
-sheet['A1'] = 'a'
-sheet['A2'] = '10'
-sheet['B1'] = 'b'
-sheet['B2'] = '20'
-sheet['C1'] = 'c'
-sheet['C2'] = '30'
-sheet['D3'] = 'D'
-
-workbook.save(filename='new_excel.xlsx')
-
+for row in sheet.iter_rows(min_row=1, max_row=4, min_col=1, max_col=4):
+    print(row)
 
