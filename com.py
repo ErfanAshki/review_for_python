@@ -1,10 +1,10 @@
 import math
 
 
-print(math.ceil(1.4))
-print(math.ceil(-5.3))
-print(math.ceil(22.6))
-print(math.ceil(10))
-print(math.ceil(5.2))
-print(math.ceil(0.1))
+print(math.floor(1.4))
+print(math.floor(-5.3))
+print(math.floor(22.6))
+print(math.floor(10))
+print(math.floor(5.2))
+print(math.floor(0.1))
 
