@@ -5,5 +5,5 @@ sheet = workbook.active
 
 for row in sheet.iter_rows(min_row=1, max_row=4, min_col=1, max_col=4):
     for cell in row:
-        print(cell)
+        print(cell.value, end='  ')
 
