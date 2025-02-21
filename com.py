@@ -1,9 +1,16 @@
-from gtts import gTTS
+from openpyxl import Workbook
 
-text = 'can i learning trade and be a good and profited trader ? I can ?'
+workbook = Workbook()
+sheet = workbook.active
 
-language_text = 'en'
+sheet['A1'] = 'a'
+sheet['A2'] = '10'
+sheet['B1'] = 'b'
+sheet['B2'] = '20'
+sheet['C1'] = 'c'
+sheet['C2'] = '30'
+sheet['D3'] = 'D'
 
-audio = gTTS(text=text, lang=language_text)
+workbook.save(filename='new_excel.xlsx')
 
-audio.save('trade.mp3')
+
