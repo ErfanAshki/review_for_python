@@ -1,7 +1,6 @@
 import math
 
 
-print(math.log(25))
-print(math.log(25,36))
-print(math.log(101, 44))
-print(math.log(10))
+print(math.log10(25))
+print(math.log10(8600))
+print(math.log10(10))
