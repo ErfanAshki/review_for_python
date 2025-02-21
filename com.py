@@ -1,9 +1,9 @@
 import math
 
 
-print(math.factorial(1))
-print(math.factorial(2))
-print(math.factorial(3))
-print(math.factorial(4))
-print(math.factorial(5))
-
+print(math.sqrt(25))
+print(math.isqrt(25))
+print(math.sqrt(77))
+print(math.isqrt(77))
+print(math.sqrt(10))
+print(math.isqrt(10))
