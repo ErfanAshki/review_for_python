@@ -1,9 +1,7 @@
 import math
 
 
-print(math.sqrt(25))
-print(math.isqrt(25))
-print(math.sqrt(77))
-print(math.isqrt(77))
-print(math.sqrt(10))
-print(math.isqrt(10))
+print(math.log(25))
+print(math.log(25,36))
+print(math.log(101, 44))
+print(math.log(10))
