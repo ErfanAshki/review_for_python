@@ -1,11 +1,9 @@
-import pyqrcode
-import png
+from gtts import gTTS
 
-text = 'slm khoshgele'
+text = 'can i learning trade and be a good and profited trader ? I can ?'
 
-qr_code = pyqrcode.create(text)
+language_text = 'en'
 
-qr_code.svg('qr_svg', scale=6)
+audio = gTTS(text=text, lang=language_text)
 
-qr_code.png('qr_png.png', scale=6)
-
+audio.save('trade.mp3')
