@@ -1,6 +1,5 @@
-my_str = 'a,b,c,d,e,f,g,h'
+txt = "     banana     "
 
-x = my_str.replace(',', '/')
+x = txt.strip()
 
-print(x)
-
+print("of all fruits", x, "is my favorite") 
