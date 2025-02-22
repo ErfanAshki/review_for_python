@@ -1,9 +1,19 @@
-import os
+import pickle
+
+names = []
+
+while True:
+    name_input = input('Enter name : ')
+    
+    if name_input == 'exit':
+        break
+    
+    names.append(name_input)
+    
+print(names)
 
 
-print(os.listdir('C:/Users/HP/Desktop/python project/review_for_python'))
-print()
-os.mkdir('C:/Users/HP/Desktop/python project/review_for_python/newww')
-
-os.system('shutdown -s')
-
+with open('name.txt', 'wb') as f : 
+    pickle.dump(names, f)
+    
+    
