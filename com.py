@@ -1,19 +1,9 @@
 import pickle
 
-names = []
+names = None
 
-while True:
-    name_input = input('Enter name : ')
+with open('name.txt', 'rb') as f:
+    names = pickle.load(f)
     
-    if name_input == 'exit':
-        break
-    
-    names.append(name_input)
-    
+
 print(names)
-
-
-with open('name.txt', 'wb') as f : 
-    pickle.dump(names, f)
-    
-    
