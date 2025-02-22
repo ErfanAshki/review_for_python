@@ -1,6 +1,3 @@
-txt = ",,,,,rrttgg.....banana....rrr"
-
-x = txt.strip(",.grt")
-
-print(x) 
-
+s = '  ##*#GeeksforGeeks#**##  '
+res = s.strip('#* ')
+print(res)
