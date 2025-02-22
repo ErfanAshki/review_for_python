@@ -1,5 +1,6 @@
-txt = "     banana     "
+txt = ",,,,,rrttgg.....banana....rrr"
 
-x = txt.strip()
+x = txt.strip(",.grt")
 
-print("of all fruits", x, "is my favorite") 
+print(x) 
+
